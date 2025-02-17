@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DijkstraAlgorithm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ namespace Dijkstra_s_method
     {
         static void Main(string[] args)
         {
-           
-            MethodsClass obj = new MethodsClass("graph.txt");
-            obj.Dijkstra();
+
+            DijkstraSolver dijkstraSolver = new DijkstraSolver("input.txt");
+            dijkstraSolver.Run();
 
             
             Console.ReadKey();
